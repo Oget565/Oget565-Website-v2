@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color:#1a1a1a;
+    color: #fff5ee;
+    font-family: manrope;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.everything {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    min-width: 500px;
+    padding: 5%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.name {
+    margin-bottom: 10px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+.pfp img {
+    width: 150px;
+    margin: 30px;
+    margin-bottom: 10px;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.githubdiv, .thmdiv, .discorddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    margin: 0 10px;
+    border-radius: 12px;
+    border: 2px solid #a8a8a833;
+    background-color: #242424;
+    transition: 0.2s ease;
+}
+
+.githubdiv:hover, .thmdiv:hover, .discorddiv:hover {
+    transform: scale(0.97);
+}
+
+.githubdiv:hover{
+    border: 2px solid #2dba4e;
+}
+
+.thmdiv:hover{
+    border: 2px solid #A3EA2A;
+}
+
+.discorddiv:hover{
+    border: 2px solid #5865F2;
+}
+
+.github,.thm,.discord{
+    display: flex;
+    text-decoration: none;
+    color: #fff5ee;
+    margin-left: 10px;
+}
+
+.githubsvg,.thmsvg,.discordsvg {
+    width: 27px;
+    fill: #fff5ee;
+
+}
+
+@media screen and (max-width: 500px) {
+    .pfp img {
+        width: 120px;
+        margin: 10px;
+    }
+
+    .name {
+        margin: 0px;
+        padding: 0px;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .githubdiv, .thmdiv, .discorddiv {
+        margin: 10px;
+}
+
+    .everything {
+        min-width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+}
