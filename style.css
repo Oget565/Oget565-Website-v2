@@ -82,6 +82,7 @@ body {
     border: 2px solid #a8a8a833;
     background-color: #242424;
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .githubdiv:hover, .thmdiv:hover, .discorddiv:hover {
@@ -93,7 +94,7 @@ body {
 }
 
 .thmdiv:hover{
-    border: 2px solid #A3EA2A;
+    border: 2px solid #26A5E4;
 }
 
 .discorddiv:hover{
@@ -105,6 +106,8 @@ body {
     text-decoration: none;
     color: #fff5ee;
     margin-left: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .githubsvg,.thmsvg,.discordsvg {
@@ -122,6 +125,19 @@ body {
 .scroll svg{
     width: 25px;
     margin-right: 10px;
+}
+
+.full-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
