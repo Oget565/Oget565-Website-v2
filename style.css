@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
     min-height: 100vh;
@@ -19,6 +20,7 @@ body {
 .everything {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 750px;
@@ -32,6 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .header {
@@ -116,17 +119,6 @@ body {
 
 }
 
-.scroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.scroll svg{
-    width: 25px;
-    margin-right: 10px;
-}
-
 .full-link {
     display: flex;
     align-items: center;
@@ -138,6 +130,42 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.devops svg {
+    margin-left: 25px;
+    fill: #fff5ee;
+    width: 65px;
+}
+
+.languages svg {
+    margin-right: 25px;
+    fill: #fff5ee;
+    width: 65px;
+}
+
+.other svg {
+    margin-right: 25px;
+    fill: #fff5ee;
+    width: 65px;
+}
+
+footer {
+    color: rgb(82, 82, 82);
+    font-family: monospace;
 }
 
 @media screen and (max-width: 500px) {
@@ -184,4 +212,5 @@ body {
         justify-content: center;
         align-items: center;
     }
+
 }
