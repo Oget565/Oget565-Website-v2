@@ -136,29 +136,54 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
 }
 
 .skills h1 {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.devops svg {
-    margin-left: 25px;
+.devopssvg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+}
+
+.languagessvg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+}
+
+.othersvg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+}
+
+.devopssvg svg {
     fill: #fff5ee;
     width: 65px;
 }
 
 .languages svg {
-    margin-right: 25px;
     fill: #fff5ee;
     width: 65px;
 }
 
 .other svg {
-    margin-right: 25px;
     fill: #fff5ee;
     width: 65px;
 }
@@ -185,6 +210,7 @@ footer {
 
     .box {
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .header {
@@ -211,6 +237,14 @@ footer {
         min-width: 100px;
         justify-content: center;
         align-items: center;
+    }
+
+    .languagessvg {
+        justify-content: center;
+    }
+    
+    .othersvg {
+        justify-content: center;
     }
 
 }
