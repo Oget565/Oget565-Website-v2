@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(6px);}
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -25,7 +30,8 @@ body {
     width: 100%;
     max-width: 750px;
     min-width: 500px;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .box {
@@ -34,7 +40,24 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 50px;
+    height: 100vh;
+    position: relative; /* Add this */
+}
+
+.scroll {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll h3 {
+    color: #fff5ee;
+    opacity: 0.7;
+    animation: bounce 1.2s infinite;
 }
 
 .header {
@@ -200,7 +223,7 @@ footer {
     }
 
     .name {
-        margin: 0px;
+        margin-bottom: 15px;
         padding: 0px;
         font-size: 30px;
         justify-content: center;
