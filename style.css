@@ -211,6 +211,45 @@ body {
     width: 65px;
 }
 
+.hardware {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pcparts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pcparts p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    text-decoration: none;
+    height: 50px;
+
+}
+
+
+.pcparts svg {
+    fill: #fff5ee;
+    width: 40px;
+    margin: 0px;
+}
+
 footer {
     color: rgb(82, 82, 82);
     font-family: monospace;
