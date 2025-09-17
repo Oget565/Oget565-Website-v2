@@ -219,13 +219,12 @@ footer {
 @media screen and (max-width: 500px) {
     .pfp img {
         width: 120px;
-        margin: 10px;
+        margin-bottom: 10px;
     }
 
     .name {
-        margin-bottom: 15px;
-        padding: 0px;
-        font-size: 30px;
+        margin-bottom: 10px;
+        font-size: 25px;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -233,7 +232,6 @@ footer {
 
     .box {
         flex-direction: column;
-        margin-bottom: 20px;
     }
 
     .header {
@@ -246,10 +244,12 @@ footer {
         justify-content: center;
         align-items: center;
         display: flex;
+        font-size: small;
     }
 
     .links {
         flex-direction: column;
+        font-size: small;
     }
 
     .githubdiv, .thmdiv, .discorddiv {
@@ -262,12 +262,44 @@ footer {
         align-items: center;
     }
 
+    .scroll {
+        font-size: smaller;
+    }
+
+    .skills {
+        font-size: smaller;
+    }
+
+    .devopssvg {
+        row-gap: 0px;
+    }
+
+    .devopssvg svg {
+        width: 45px;
+        height: 80px;
+        margin: 0px;
+    }
+
     .languagessvg {
         justify-content: center;
+        row-gap: 0px;
+    }
+
+    .languagessvg svg {
+        width: 45px;
+        height: 80px;
+        margin: 0px;
     }
     
     .othersvg {
         justify-content: center;
+        row-gap: 0px;
+    }
+
+    .othersvg svg {
+        width: 45px;
+        height: 80px;
+        margin: 0px;
     }
 
 }
