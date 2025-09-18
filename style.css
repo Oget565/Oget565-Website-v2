@@ -9,8 +9,8 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background-color:#1a1a1a;
-    color: #fff5ee;
+    background-color:#0A0A0A;
+    color: #F5F5F5;
     font-family: manrope;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .scroll h3 {
-    color: #fff5ee;
+    color: #F5F5F5;
     opacity: 0.7;
     animation: bounce 1.2s infinite;
 }
@@ -105,8 +105,8 @@ body {
     padding: 8px;
     margin: 0 10px;
     border-radius: 12px;
-    border: 2px solid #a8a8a833;
-    background-color: #242424;
+    border: 2px solid #5a5a5a33;
+    background-color: #161616;
     transition: 0.2s ease;
     cursor: pointer;
 }
@@ -130,7 +130,7 @@ body {
 .github,.thm,.discord{
     display: flex;
     text-decoration: none;
-    color: #fff5ee;
+    color: #F5F5F5;
     margin-left: 10px;
     justify-content: center;
     align-items: center;
@@ -138,7 +138,7 @@ body {
 
 .githubsvg,.thmsvg,.discordsvg {
     width: 27px;
-    fill: #fff5ee;
+    fill: #F5F5F5;
 
 }
 
@@ -197,17 +197,17 @@ body {
 }
 
 .devopssvg svg {
-    fill: #fff5ee;
+    fill: #F5F5F5;
     width: 65px;
 }
 
 .languages svg {
-    fill: #fff5ee;
+    fill: #F5F5F5;
     width: 65px;
 }
 
 .other svg {
-    fill: #fff5ee;
+    fill: #F5F5F5;
     width: 65px;
 }
 
@@ -217,7 +217,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
+
+.hardware h1 {
+    margin-bottom: 20px;
+}
+
+.hardware-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
 
 .pc {
     display: flex;
@@ -240,18 +255,55 @@ body {
     margin: 0px;
     text-decoration: none;
     height: 50px;
+    font-size: larger;
 
 }
 
-
 .pcparts svg {
-    fill: #fff5ee;
+    fill: #F5F5F5;
+    width: 40px;
+    margin: 0px;
+}
+
+.server {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.serverparts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serverparts p {
+    display: flex;
+    color: #858585;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    text-decoration: none;
+    height: 50px;
+    font-size: larger;
+
+}
+
+.serverparts p.yes {
+    color: #F5F5F5;
+}
+
+
+.serverparts svg {
+    fill: #F5F5F5;
     width: 40px;
     margin: 0px;
 }
 
 footer {
-    color: rgb(82, 82, 82);
+    color: #4e4e4e;
     font-family: monospace;
 }
 
@@ -263,7 +315,6 @@ footer {
 
     .name {
         margin-bottom: 10px;
-        font-size: 25px;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -271,6 +322,14 @@ footer {
 
     .box {
         flex-direction: column;
+    }
+
+    .clock{
+        font-size: 17px;
+    }
+
+    #weather {
+        font-size: 15px;
     }
 
     .header {
@@ -288,7 +347,6 @@ footer {
 
     .links {
         flex-direction: column;
-        font-size: small;
     }
 
     .githubdiv, .thmdiv, .discorddiv {
@@ -339,6 +397,20 @@ footer {
         width: 45px;
         height: 80px;
         margin: 0px;
+    }
+
+    .hardware {
+        flex-direction: column;
+        font-size: smaller;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .hardware-sections {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
 }
