@@ -30,8 +30,8 @@ body {
     width: 100%;
     max-width: 750px;
     min-width: 500px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .box {
@@ -166,6 +166,27 @@ body {
     justify-content: center;
 }
 
+.devops h2 {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+}
+
+.devops h2::before {
+    content: "";
+    position: absolute;
+    left: 65%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 50px;
+    background: #26A5E4;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
 .devopssvg {
     display: flex;
     flex-direction: row;
@@ -186,6 +207,27 @@ body {
     width: 100%;
 }
 
+.languages h2 {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+}
+
+.languages h2::before {
+    content: "";
+    position: absolute;
+    left: 55%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    background: #eeff00;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
 .othersvg {
     display: flex;
     flex-direction: row;
@@ -194,6 +236,27 @@ body {
     flex-wrap: wrap;
     gap: 25px;
     width: 100%;
+}
+
+.other h2 {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+}
+
+.other h2::before {
+    content: "";
+    position: absolute;
+    left: 75%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 50px;
+    background: #e42626;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.6;
+    z-index: -1;
 }
 
 .devopssvg svg {
@@ -366,6 +429,14 @@ footer {
     .skills {
         font-size: smaller;
     }
+    
+    .devops h2::before {
+        left: 65%;
+        top: 55%;
+        width: 130px;
+        height: 50px;
+
+    }
 
     .devopssvg {
         row-gap: 0px;
@@ -377,6 +448,14 @@ footer {
         margin: 0px;
     }
 
+    .languages h2::before {
+        left: 50%;
+        top: 55%;
+        width: 130px;
+        height: 50px;
+
+    }
+
     .languagessvg {
         justify-content: center;
         row-gap: 0px;
@@ -386,6 +465,14 @@ footer {
         width: 45px;
         height: 80px;
         margin: 0px;
+    }
+
+    .other h2::before {
+        left: 80%;
+        top: 55%;
+        width: 130px;
+        height: 50px;
+
     }
     
     .othersvg {
