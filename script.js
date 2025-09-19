@@ -32,4 +32,23 @@ async function getWeather() {
   document.getElementById("weather").innerText = `${temp} °C, ${desc}`;
 }
 
+// Animation function for page load
+function animateOnLoad() {
+  const animatedElements = document.querySelectorAll('.animate-on-load');
+  
+  animatedElements.forEach((element, index) => {
+    setTimeout(() => {
+      element.classList.add('visible');
+    }, index * 200); // Stagger each element by 200ms
+  });
+}
+
+// Initialize everything when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+  getWeather();
+  // Small delay to ensure page is fully loaded
+  setTimeout(animateOnLoad, 100);
+});
+
+// Also call getWeather directly for immediate execution (backup)
 getWeather();
