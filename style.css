@@ -6,6 +6,30 @@
     50% { transform: translateY(6px);}
 }
 
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial hidden state for animated elements */
+.animate-on-load {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Visible state when animation is triggered */
+.animate-on-load.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     min-height: 100vh;
     margin: 0;
