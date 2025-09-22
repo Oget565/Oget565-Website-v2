@@ -51,12 +51,46 @@ function setMobileViewportHeight() {
   document.documentElement.style.setProperty('--dynamic-vh', `${window.innerHeight}px`);
 }
 
+// Function to handle scroll indicator visibility
+function handleScrollIndicator() {
+  const scrollIndicator = document.getElementById('scrollid');
+  let isVisible = true;
+  
+  function handleScroll() {
+    if (!scrollIndicator) return;
+    
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const threshold = 50; // Show indicator when within 50px of top
+    
+    if (scrollTop > threshold && isVisible) {
+      // Hide indicator when scrolled down
+      isVisible = false;
+      scrollIndicator.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+      scrollIndicator.style.opacity = '0';
+      scrollIndicator.style.transform = 'translateY(10px)';
+      scrollIndicator.style.pointerEvents = 'none';
+    } else if (scrollTop <= threshold && !isVisible) {
+      // Show indicator when scrolled back to top
+      isVisible = true;
+      scrollIndicator.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+      scrollIndicator.style.opacity = '0.7'; // Match the original opacity from CSS
+      scrollIndicator.style.transform = 'translateY(0)';
+      scrollIndicator.style.pointerEvents = 'auto';
+    }
+  }
+  
+  // Listen for scroll events
+  window.addEventListener('scroll', handleScroll, { passive: true });
+}
+
 // Initialize everything when the page loads
 document.addEventListener('DOMContentLoaded', function() {
   getWeather();
   setMobileViewportHeight();
   // Small delay to ensure page is fully loaded
   setTimeout(animateOnLoad, 100);
+  // Initialize scroll indicator handler
+  handleScrollIndicator();
 });
 
 // Update viewport height on resize (handles mobile address bar show/hide)
