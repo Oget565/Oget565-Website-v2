@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0);}
-    50% { transform: translateY(6px);}
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
 }
 
 @keyframes slideUp {
@@ -11,6 +18,7 @@
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -33,7 +41,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background-color:#0A0A0A;
+    background-color: #0A0A0A;
     color: #F5F5F5;
     font-family: manrope;
 }
@@ -65,12 +73,14 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    position: relative; /* Add this */
+    position: relative;
+    /* Add this */
 }
 
 .scroll {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px;
+    /* Adjust as needed */
     left: 0;
     width: 100%;
     display: flex;
@@ -101,7 +111,7 @@ body {
     padding: 0px;
     font-weight: bold;
     font-size: 40px;
-    
+
 }
 
 .pfp img {
@@ -121,7 +131,9 @@ body {
     cursor: pointer;
 }
 
-.githubdiv, .thmdiv, .discorddiv {
+.githubdiv,
+.thmdiv,
+.discorddiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,23 +147,27 @@ body {
     cursor: pointer;
 }
 
-.githubdiv:hover, .thmdiv:hover, .discorddiv:hover {
+.githubdiv:hover,
+.thmdiv:hover,
+.discorddiv:hover {
     transform: scale(0.97);
 }
 
-.githubdiv:hover{
+.githubdiv:hover {
     border: 2px solid #2dba4e;
 }
 
-.thmdiv:hover{
+.thmdiv:hover {
     border: 2px solid #26A5E4;
 }
 
-.discorddiv:hover{
+.discorddiv:hover {
     border: 2px solid #5865F2;
 }
 
-.github,.thm,.discord{
+.github,
+.thm,
+.discord {
     display: flex;
     text-decoration: none;
     color: #F5F5F5;
@@ -160,7 +176,9 @@ body {
     align-items: center;
 }
 
-.githubsvg,.thmsvg,.discordsvg {
+.githubsvg,
+.thmsvg,
+.discordsvg {
     width: 27px;
     fill: #F5F5F5;
 
@@ -411,7 +429,7 @@ footer {
         flex-direction: column;
     }
 
-    .clock{
+    .clock {
         font-size: 17px;
     }
 
@@ -436,9 +454,11 @@ footer {
         flex-direction: column;
     }
 
-    .githubdiv, .thmdiv, .discorddiv {
+    .githubdiv,
+    .thmdiv,
+    .discorddiv {
         margin: 10px;
-}
+    }
 
     .everything {
         min-width: 100px;
@@ -446,14 +466,11 @@ footer {
         align-items: center;
     }
 
-    .scroll {
-        font-size: smaller;
-    }
 
     .skills {
         font-size: smaller;
     }
-    
+
     .devops h2::before {
         left: 65%;
         top: 55%;
@@ -498,7 +515,7 @@ footer {
         height: 50px;
 
     }
-    
+
     .othersvg {
         justify-content: center;
         row-gap: 0px;
