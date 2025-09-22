@@ -43,11 +43,26 @@ function animateOnLoad() {
   });
 }
 
+// Function to handle mobile viewport height
+function setMobileViewportHeight() {
+  // Calculate the actual viewport height
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty('--dynamic-vh', `${window.innerHeight}px`);
+}
+
 // Initialize everything when the page loads
 document.addEventListener('DOMContentLoaded', function() {
   getWeather();
+  setMobileViewportHeight();
   // Small delay to ensure page is fully loaded
   setTimeout(animateOnLoad, 100);
+});
+
+// Update viewport height on resize (handles mobile address bar show/hide)
+window.addEventListener('resize', setMobileViewportHeight);
+window.addEventListener('orientationchange', function() {
+  setTimeout(setMobileViewportHeight, 100); // Small delay for orientation change
 });
 
 // Also call getWeather directly for immediate execution (backup)

@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+/* Custom properties for mobile viewport handling */
+:root {
+    --vh: 1vh;
+    --dynamic-vh: 100vh;
+}
+
+/* Supports modern browsers with dynamic viewport units */
+@supports (height: 100dvh) {
+    :root {
+        --dynamic-vh: 100dvh;
+    }
+}
+
 @keyframes bounce {
 
     0%,
@@ -72,7 +85,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: var(--dynamic-vh);
     position: relative;
     /* Add this */
 }
@@ -413,6 +426,16 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    /* Ensure proper mobile viewport height handling */
+    .box {
+        height: var(--dynamic-vh);
+        min-height: 100vh; /* Fallback for older browsers */
+        min-height: var(--dynamic-vh);
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
     .pfp img {
         width: 120px;
         margin-bottom: 10px;
