@@ -429,7 +429,6 @@ footer {
     .box {
         flex-direction: column;
         height: 100dvh;
-        min-height: 100dvh;
         padding: 0;
         margin: 0;
     }
@@ -467,13 +466,13 @@ footer {
 
     body {
         min-height: 100dvh;
-        overflow: hidden;
     }
 
     .everything {
         min-width: 100px;
         justify-content: center;
         align-items: center;
+
     }
 
 
