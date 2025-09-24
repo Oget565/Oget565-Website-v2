@@ -50,5 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(animateOnLoad, 100);
 });
 
+window.addEventListener("scroll", () => {
+  const text = document.querySelector(".scroll");
+  const maxScroll = 300; // pixels until fully hidden
+  let opacity = 1 - window.scrollY / maxScroll;
+  if (opacity < 0) opacity = 0;
+  text.style.opacity = opacity;
+});
+
 // Also call getWeather directly for immediate execution (backup)
 getWeather();
