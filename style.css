@@ -429,6 +429,9 @@ footer {
     .box {
         flex-direction: column;
         height: 100dvh;
+        min-height: 100dvh;
+        padding: 0;
+        margin: 0;
     }
 
     .clock {
@@ -460,6 +463,11 @@ footer {
     .thmdiv,
     .discorddiv {
         margin: 10px;
+    }
+
+    body {
+        min-height: 100dvh;
+        overflow: hidden;
     }
 
     .everything {
