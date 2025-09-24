@@ -428,6 +428,7 @@ footer {
 
     .box {
         flex-direction: column;
+        height: 100dvh;
     }
 
     .clock {
