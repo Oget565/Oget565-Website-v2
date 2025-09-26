@@ -59,7 +59,16 @@
             </div>
         </div>
         <div class="scroll">
-            <h3>Scroll</h3>
+            <h3 class="scroll-btn">Scroll</h3>
+            <script>
+                document.querySelector(".scroll-btn").addEventListener("click", function () {
+                    window.scrollBy({
+                        top: 650,       // amount of pixels to scroll vertically
+                        left: 0,        // horizontal scroll (not used here)
+                        behavior: "smooth" // smooth scroll effect
+                    });
+                });
+            </script>
         </div>
         <div class="skills">
             <h1>My Skills</h1>
